@@ -24,6 +24,7 @@ while (true) {
         alert(`Your balance is:${balance}`);
     }
     else if (action === "exit") {
-        alert("Thank you for using Bank Manager")
+        alert("Thank you for using Bank Manager");
+        break;
     }
 }
