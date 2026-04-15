@@ -3,7 +3,7 @@ let balance = 0;
 while (true) {
     const action = prompt("Choose action: -deposit -withdraw -check balance -exit").toLowerCase();
     if (action === "deposit") {
-        let amount = prompt("Deposit balance:");
+        let amount = parseFloat(prompt("Deposit balance:"));
         if (amount < 0) {
             alert("Please enter a balance amount.");
         } else {
@@ -12,7 +12,7 @@ while (true) {
         }
     }
     else if (action === "withdraw") {
-        let amount = prompt("Enter amount to withdraw:");
+        let amount = parseFloat(prompt("Enter amount to withdraw:"));
         if (amount > balance) {
             alert("Insufficient balance");
         } else {
